@@ -1,0 +1,46 @@
+// 页面背景
+$pageBg:#ebebeb;
+$pageHeader:#cb3833;
+
+// 强调文字
+$emphasize:#F78D0E;
+
+
+// 钱包 / 享定投 / 自选基金
+$wallet: #4DCB67;
+$po: #23BFCE;
+$fund: #F36552;
+$activity:rgb(138, 117, 23);
+
+// 
+$buy: #18B3EB;
+$redeem: #4DCB67;
+$adjust: #F6AD33;
+$activity:#F6AD33;
+$dividend:#F6AD33;
+
+// 涨 / 跌 
+$rise: #D0021B;
+$fall: #417505;
+
+// 成功 / 失败 / 确认 / 撤销
+$success: #4CCB45;
+$fail: rgb(187, 23, 23);
+$confirm:rgb(240, 117, 60);
+$cancel:#999;
+
+// 链接 / 点击反馈底色
+$link: #18B3EB;
+$react: #FAFAFA;
+
+// 按钮色
+$btn1: #3cb878;
+$btn1-active: lighten($btn1,15%);
+$btn1-disabled: darken($btn1,15%);
+
+// 边框
+$border-gray:#EDEDED;
+
+
+// 图片地址
+$baseImgUrl: '/public/img/';

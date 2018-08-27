@@ -1,0 +1,28 @@
+@import '../../scss/index';
+.page-header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height:4rem;
+    background:$pageHeader;
+
+    @include middleCenter;
+
+    .left{
+        flex:3;
+        @include middleLeft;
+    }
+    .center{
+        flex:4;
+        @include middleCenter;
+        max-width: 40%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @include fontHuge(#fff);
+        
+    }
+    .right{
+        flex:3;
+        @include middleRight;
+    }
+}

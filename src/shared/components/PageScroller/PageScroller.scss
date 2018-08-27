@@ -1,0 +1,10 @@
+@import '../../scss/index';
+.page-scroller{
+    flex: 1;
+    overflow-y: auto;
+    background:$pageBg;
+    padding-top:4rem;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}

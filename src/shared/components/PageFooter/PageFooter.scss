@@ -1,0 +1,9 @@
+@import '../../scss/index';
+.page-footer{
+    height:4rem;
+    @include middleLeft;
+    li{
+        flex:1;
+        @include centerMiddle;
+    }
+}

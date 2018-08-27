@@ -1,0 +1,12 @@
+// 长按反馈
+.reaction:active{
+    background: rgba(160, 225, 255, .3);
+}
+// 文字、 图片不可被选中
+p, h1, h2, h3, h4, h5, h6, img, button, span, i{
+    user-select: none;
+}
+
+.selectable{
+    user-select: auto;
+}

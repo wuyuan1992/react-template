@@ -1,0 +1,52 @@
+@import '../var';
+
+@mixin font($family, $color, $size, $lineHeight){
+    // font-family: PingFangSC-Regular;
+    color: $color;
+    font-size: $size + rem;
+    line-height: $lineHeight + rem;
+    font-family: $family;
+    font-weight: 400;
+}
+
+@mixin fontGigantic($color){
+    @include font( 'PingFangSC-Regular', $color, 3.4, 5.0 );
+}
+@mixin fontHuge($color){
+    @include font( 'PingFangSC-Regular', $color, 2.0, 2.8 );
+}
+@mixin fontLarge($color){
+    @include font( 'PingFangSC-Regular', $color, 1.7, 2.4 );
+}
+@mixin fontBig($color){
+    @include font( 'PingFangSC-Regular', $color, 1.6, 2.2 );
+}
+@mixin fontMedium($color){
+    @include font( 'PingFangSC-Regular', $color, 1.5, 2.0 );
+}
+@mixin fontNormal($color){
+    @include font( 'PingFangSC-Regular', $color, 1.4, 1.8 );
+}
+@mixin fontSmall($color){
+    @include font( 'PingFangSC-Regular', $color, 1.2, 1.6 );
+}
+@mixin fontTiny($color){
+    @include font( 'PingFangSC-Regular', $color, 1.1, 1.4 );
+}
+
+
+
+
+@mixin bgImg($width, $height, $src){
+    display: inline-block;
+    width: $width + rem;
+    height: $height + rem;
+    background: url($baseImgUrl + $src) no-repeat;
+    background-size: cover;
+}
+
+@mixin img($width, $height){
+    display: inline-block;
+    width: $width + rem;
+    height: $height + rem;
+}

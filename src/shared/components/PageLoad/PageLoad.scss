@@ -1,0 +1,36 @@
+@import '../../scss/index';
+@keyframes circle{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.page-loading{
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(10,10,10,.6);
+    @include middleCenter;
+    flex-direction: column;
+    z-index: 30000;
+    h3{
+        @include fontBig(#FFF);
+        margin-bottom:2rem;
+    }
+    .imgs{
+        width: 8rem;
+        height:8rem;
+        background: url(/public/img/logo.png) no-repeat;
+        background-position: center center;
+        background-size:5rem 5rem;
+        img{
+            width: 8rem;
+            height:8rem;
+            animation: circle 1s linear infinite reverse;
+        }
+    }
+}
