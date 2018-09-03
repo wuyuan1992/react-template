@@ -1,7 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { PageHeader, PageContent } from '../../../shared/components';
 
-export class OpenAccount extends Component{
+class OpenAccount extends React.Component{
+    constructor(){
+        super();
+    }
     render(){
         return (
             <PageContent>
@@ -17,3 +20,5 @@ export class OpenAccount extends Component{
         ) 
     }
 }
+
+export default OpenAccount;

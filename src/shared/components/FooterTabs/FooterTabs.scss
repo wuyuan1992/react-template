@@ -1,0 +1,18 @@
+@import '../../scss/index';
+.footer-tabs{
+    width: 100%;
+    height: 100%;
+    @include middleCenter;
+
+    li{
+        flex: 1;
+        @include centerBetween;
+        height:100%;
+        padding:1rem 0;
+        h4{
+            max-width: 94%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}

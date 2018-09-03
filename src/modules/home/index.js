@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { PageContent, PageHeader } from '../../shared/components';
+import { PageContent, PageHeader, Categories, AppItems1, AppItems2, PageSection } from '../../shared/components';
 
 export default class Home extends Component{
     render(){
@@ -14,6 +14,22 @@ export default class Home extends Component{
                         <i>分享</i>
                     </div>
                 </PageHeader>
+
+
+
+
+
+                <Categories />
+                
+                <PageSection>
+                    <AppItems1 />
+                </PageSection>
+
+                <PageSection>
+                    <AppItems2 />
+                </PageSection>
+
+
             </PageContent>
         ) 
     }

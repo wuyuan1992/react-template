@@ -1,0 +1,17 @@
+@import '../../scss/index';
+.app-items-2{
+    width: 100%;
+    @include middleLeft;
+
+    li{
+        flex: 1;
+        height:8rem;
+        padding:1rem .5rem;
+        background:#FFF;
+        @include leftBetween;
+        img{
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+}

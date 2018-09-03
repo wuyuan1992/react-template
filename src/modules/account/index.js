@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { OpenAccount } from './pages/openAccount';
+// import { OpenAccount } from './pages/openAccount';
 
 
-export default class Account extends Component {
+class Account extends Component {
 
   render() {
     const match = this.props.match;
 
+    console.log(match.url);
+
     return (
         <Switch>
-            <Route path={`${match.url}/index`} component={OpenAccount} ></Route>
+            {/* <Route path={`${match.url}/`} component={ OpenAccount } ></Route> */}
         </Switch>
     );
   }
 }
+export default Account;

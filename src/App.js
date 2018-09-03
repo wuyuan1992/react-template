@@ -23,8 +23,6 @@ class App extends Component {
   }
 
   render() {
-
-    console.log(this.Modules);
     return (
       <div className="page-wrapper">
         <Router>
@@ -46,11 +44,13 @@ class App extends Component {
                     }
 
                     {/* 未匹配显示错误页 */}
-                    <Route component={this.Modules.Err} ></Route>
+                    {/* <Route component={this.Modules.Err} ></Route> */}
                   </Switch>
                 </div>
             </PageScroller>
+
             <PageFooter />
+            
           </React.Fragment>
         </Router>
       </div>

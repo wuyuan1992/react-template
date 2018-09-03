@@ -1,0 +1,19 @@
+@import '../../scss/index';
+.categories{
+    width: 100%;
+    height: 100%;
+    @include middleCenter;
+    box-shadow: 0 -1px 0 0 #e5e5e5;
+
+    li{
+        flex: 1;
+        @include centerBetween;
+        height:100%;
+        padding:1rem 0;
+        h4{
+            max-width: 94%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
